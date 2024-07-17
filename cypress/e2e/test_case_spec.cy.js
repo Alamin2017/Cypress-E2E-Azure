@@ -1,7 +1,8 @@
 import HomeLocator from "../pages/HomePage";
 const home_obj=new HomeLocator();
 describe('Test Case 1: Register User', () => {
-    before("Navigate to url http://automationexercise.com ",() => {
+    
+    before('Navigate to url',() => {
         cy.visit("https://automationexercise.com/");
     });
     it('Verify that home page is visible successfully', () => {
